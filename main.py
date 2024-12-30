@@ -7,7 +7,7 @@ from kivymd.uix.textfield import MDTextField
 from kivymd.uix.label import MDLabel
 from kivy.uix.boxlayout import BoxLayout
 import re
-from kivy.core.window import Window
+
 from plyer import filechooser
 
 # KV layout definition
@@ -567,7 +567,7 @@ class Kishore(MDApp):
     def build(self):
         """Build and return the ScreenManager with all screens"""
         self.theme_cls.theme_style = "Dark"  # Set the theme style
-        Window.size = (280, 640) 
+        
         # Create ScreenManager
         sm = ScreenManager()
 
